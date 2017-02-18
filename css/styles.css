@@ -41,3 +41,15 @@ li {
 #portfolio img {
     width: 100%;
 }
+
+article {
+    margin-bottom: 30px;
+}
+
+#name {
+    float: left;
+}
+
+#back {
+    float: right;
+}
