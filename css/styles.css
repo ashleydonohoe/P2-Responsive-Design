@@ -24,6 +24,11 @@ li {
     font-weight: 600;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .profile-img {
     display: block;
     margin: 40px auto 10px;
@@ -128,5 +133,54 @@ article {
     #bottom-nav {
         float: right;
         display: inline;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        padding: 5%;
+    }
+
+    .name {
+        display: inline;
+        width: 50%;
+        float: left;
+        text-align: left;
+        -webkit-margin-before: 0;
+    }
+
+    nav ul {
+        float: right;
+        display: inline;
+        width: 40%;
+        padding-right: 0;
+        text-align: right;
+    }
+
+    #about {
+        clear: both;
+    }
+
+    #portfolio article {
+        float: left;
+        background: white !important;
+        padding-bottom: 40px;
+        font-size: 1.5em;
+        width: 33%;
+    }
+
+    #contact {
+        display: block;
+        text-align: center;
+    }
+
+    #contact h2 {
+        text-align: center;
+    }
+
+    #contact p {
+        margin-left: 25%;
+        width: 50%;
     }
 }
