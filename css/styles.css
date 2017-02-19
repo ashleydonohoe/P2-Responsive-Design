@@ -1,6 +1,7 @@
 html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -30,12 +31,14 @@ li {
 }
 
 #portfolio {
-    background-color: white;
+    background-color: white !important;
     padding: 20px 10px;
+    width: 100%;
+
 }
 
 #portfolio h2 {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 #portfolio img {
@@ -43,7 +46,7 @@ li {
 }
 
 article {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 #name {
@@ -52,4 +55,78 @@ article {
 
 #back {
     float: right;
+}
+
+#bottom-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    ul {
+        margin: 0 auto;
+    }
+
+    li {
+        background: none;
+        display: inline-block;
+    }
+
+    #about {
+        width: 100%;
+        margin: 4%;
+    }
+
+    #about p {
+       width: 50%;
+        text-align: left;
+        float: left;
+        font-size: 1.5em;
+        font-weight: lighter;
+    }
+
+    .profile-img {
+        display: inline;
+        width: 40%;
+        margin: 0;
+    }
+
+    #portfolio {
+        clear: both;
+        width: 100%;
+    }
+
+    #portfolio img {
+        width: 95%;
+    }
+
+    #portfolio article {
+        width: 50%;
+        float: left;
+        background: white !important;
+
+    }
+
+    #contact {
+        clear: both;
+        width: 100%;
+        padding: 2%;
+    }
+
+    #contact h2 {
+       padding-top: 5%;
+    }
+
+    #contact p {
+        font-size: 1.5em;
+        margin: 5%;
+    }
+
+    #back {
+        display: none;
+    }
+
+    #bottom-nav {
+        float: right;
+        display: inline;
+    }
 }
