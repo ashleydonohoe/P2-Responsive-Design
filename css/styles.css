@@ -8,6 +8,7 @@ body {
     font-family: "Lato", sans-serif;
     background-color: whitesmoke;
     text-align: center;
+    padding: 2%;
 }
 
 ul {
@@ -36,10 +37,14 @@ a {
 }
 
 #portfolio {
-    background-color: white !important;
-    padding: 20px 10px;
-    width: 100%;
+    background: white;
+    padding: 10px;
+}
 
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #portfolio h2 {
@@ -47,7 +52,7 @@ a {
 }
 
 #portfolio img {
-    width: 100%;
+    max-width: 100%;
 }
 
 article {
@@ -82,7 +87,7 @@ article {
     }
 
     #about p {
-       width: 50%;
+        width: 50%;
         text-align: left;
         float: left;
         font-size: 1.5em;
@@ -95,20 +100,11 @@ article {
         margin: 0;
     }
 
-    #portfolio {
-        clear: both;
-        width: 100%;
-    }
-
-    #portfolio img {
-        width: 95%;
-    }
-
-    #portfolio article {
-        width: 50%;
+    .item {
+        background: white;
+        width: 45%;
+        padding: 2.5%;
         float: left;
-        background: white !important;
-
     }
 
     #contact {
@@ -118,11 +114,11 @@ article {
     }
 
     #contact h2 {
-       padding-top: 5%;
+        padding-top: 5%;
     }
 
     #contact p {
-        font-size: 1.5em;
+        font-size: 0.9em;
         margin: 5%;
     }
 
@@ -133,7 +129,7 @@ article {
     #bottom-nav {
         float: right;
         display: inline;
-    }
+    };
 }
 
 @media (min-width: 1024px) {
@@ -162,12 +158,11 @@ article {
         clear: both;
     }
 
-    #portfolio article {
+    .item {
+        background: white;
+        width: 28%;
         float: left;
-        background: white !important;
-        padding-bottom: 40px;
         font-size: 1.5em;
-        width: 33%;
     }
 
     #contact {
@@ -182,5 +177,5 @@ article {
     #contact p {
         margin-left: 25%;
         width: 50%;
-    }
+    };
 }
